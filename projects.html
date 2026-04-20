@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Projects by Samir Meshram | Full Stack Developer</title>
+
+    <meta
+      name="description"
+      content="Explore projects by Samir Meshram featuring full stack development, Supabase web apps, Python tools, document processing, subtitle generation, and practical software solutions."
+    />
+
+    <meta
+      name="keywords"
+      content="Samir Meshram Projects, Samir Meshram, Full Stack Developer, Supabase Projects, Python Projects, Java Projects, Web Development Projects, Backend Projects, GitHub Projects"
+    />
+
+    <meta name="author" content="Samir Meshram" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b1020" />
+
+    <link rel="canonical" href="https://samirmeshram.in/projects.html" />
+    <link rel="stylesheet" href="projects.css" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://samirmeshram.in/projects.html" />
+    <meta
+      property="og:title"
+      content="Projects by Samir Meshram | Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Explore projects by Samir Meshram featuring full stack development, Supabase web apps, Python tools, document processing, subtitle generation, and practical software solutions."
+    />
+    <meta property="og:site_name" content="Samir Meshram" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Projects by Samir Meshram | Full Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore projects by Samir Meshram featuring full stack development, Supabase web apps, Python tools, document processing, subtitle generation, and practical software solutions."
+    />
+  </head>
+  <body class="page page--projects">
+    <div class="page-loader" aria-hidden="true">
+      <div class="page-loader__logo">Samir<span>.</span></div>
+      <div class="page-loader__text">Crafting a detailed premium page...</div>
+      <div class="page-loader__bar"><span></span></div>
+    </div>
+
+    <div class="page-progress" aria-hidden="true"></div>
+    <div class="cursor cursor-dot" aria-hidden="true"></div>
+    <div class="cursor cursor-ring" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <button class="back-to-top" aria-label="Back to top"><span>↑</span></button>
+    <canvas id="pageCanvas" aria-hidden="true"></canvas>
+
+    <header class="header">
+      <nav class="container nav">
+        <a
+          class="brand magnetic"
+          href="index.html"
+          aria-label="Go to home page"
+        >
+          <span class="brand__mark">Samir</span>
+          <span class="brand__dot">.</span>
+        </a>
+
+        <div class="nav__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="journey.html">Journey</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html" class="is-current" aria-current="page"
+            >Projects</a
+          >
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav__actions">
+          <button
+            class="theme-toggle magnetic"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-toggle__sun">☀</span>
+            <span class="theme-toggle__moon">☾</span>
+          </button>
+          <a
+            class="button button--tiny button--ghost magnetic desktop-only"
+            href="contact.html"
+            >Let's Talk</a
+          >
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="journey.html">Journey</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html" class="is-current" aria-current="page"
+          >Projects</a
+        >
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero__glow"></div>
+        <div class="container page-hero__grid">
+          <div class="page-hero__content reveal">
+            <div class="eyebrow">Projects • Live Builds • Real Work</div>
+            <h1>
+              Real projects with
+              <span class="gradient-text"
+                >live project pages and GitHub repositories</span
+              >.
+            </h1>
+            <p class="page-hero__lead">
+              This page highlights the real projects I built across full stack
+              development, Supabase-powered web apps, Python tools, document
+              processing, and practical problem solving.
+            </p>
+            <div class="hero-actions">
+              <a class="button button--primary magnetic" href="services.html"
+                >Continue to Services</a
+              >
+              <a class="button button--ghost magnetic" href="index.html"
+                >Back to Home Overview</a
+              >
+            </div>
+            <div class="hero-metrics">
+              <article class="stat-card magnetic">
+                <strong><span data-counter="5">5</span></strong>
+                <span>Featured projects on this page</span>
+              </article>
+              <article class="stat-card magnetic">
+                <strong><span data-counter="3">3</span></strong>
+                <span>Python-based project tools</span>
+              </article>
+              <article class="stat-card magnetic">
+                <strong><span data-counter="2">2</span></strong>
+                <span>Full stack web applications</span>
+              </article>
+              <article class="stat-card magnetic">
+                <strong><span data-counter="100">100</span>%</strong>
+                <span>Built through personal and academic project work</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="page-hero__visual reveal">
+            <div class="showcase-card stack-showcase magnetic">
+              <div class="card__eyebrow">Project focus</div>
+              <h3 class="card__title">
+                Full stack, Supabase, Python tools, and practical application
+                building
+              </h3>
+              <p>
+                These projects reflect my work across frontend and backend
+                development, live project deployment, Supabase-powered systems,
+                PDF tools, subtitle generation, and real-world implementation.
+              </p>
+              <div class="stack-showcase__cards">
+                <article class="stack-card glass">
+                  <strong>Daily Goal Tracker</strong
+                  ><span>Supabase daily productivity web app</span>
+                </article>
+                <article class="stack-card glass">
+                  <strong>QuickBite Delivery</strong
+                  ><span>Full stack food delivery web app</span>
+                </article>
+                <article class="stack-card glass">
+                  <strong>PDF Tools</strong
+                  ><span>Audiobook and translation workflows</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-heading__kicker">Project Selector</div>
+            <h2>
+              Browse the real projects and open the live project page or GitHub
+              repository for each one.
+            </h2>
+            <p>
+              These cards highlight the projects I have actually built and
+              published, with direct access to internal project pages and GitHub
+              repositories where available.
+            </p>
+          </div>
+
+          <div
+            class="filter-row reveal"
+            role="toolbar"
+            aria-label="Project filters"
+          >
+            <button
+              class="filter-button is-active magnetic"
+              type="button"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button
+              class="filter-button magnetic"
+              type="button"
+              data-filter="ecommerce"
+            >
+              Full Stack
+            </button>
+            <button
+              class="filter-button magnetic"
+              type="button"
+              data-filter="ai"
+            >
+              Python
+            </button>
+            <button
+              class="filter-button magnetic"
+              type="button"
+              data-filter="platform"
+            >
+              Tools
+            </button>
+          </div>
+
+          <div class="project-grid">
+            <article
+              class="project-card card magnetic reveal"
+              data-category="ecommerce"
+            >
+              <div class="card__eyebrow">Full Stack • Supabase Web App</div>
+              <h3 class="card__title">
+                <a
+                  href="/projects/daily-goal-tracker/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: inherit; text-decoration: none"
+                  >Daily Goal Tracker</a
+                >
+              </h3>
+              <p>
+                A Supabase-powered daily goal tracking web application with
+                secure login, admin task management, repeating daily checklist
+                workflows, per-day completion status, activity logs, and report
+                views for tracking progress over time.
+              </p>
+              <div class="card__meta">
+                <span class="pill">Supabase Auth</span>
+                <span class="pill">Admin Panel</span>
+                <span class="pill">Daily Reports</span>
+              </div>
+              <a
+                class="button button--ghost button--tiny magnetic"
+                href="/projects/daily-goal-tracker/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open Project</a
+              >
+            </article>
+
+            <article
+              class="project-card card magnetic reveal"
+              data-category="ecommerce"
+            >
+              <div class="card__eyebrow">Full Stack • Web Application</div>
+              <h3 class="card__title">
+                <a
+                  href="https://github.com/SamirYMeshram/mywebsite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: inherit; text-decoration: none"
+                  >QuickBite Delivery</a
+                >
+              </h3>
+              <p>
+                A full-stack food delivery web application with customer
+                ordering flows and a working admin panel for managing products,
+                users, orders, and platform operations.
+              </p>
+              <div class="card__meta">
+                <span class="pill">Food delivery</span>
+                <span class="pill">Admin panel</span>
+              </div>
+              <a
+                class="button button--ghost button--tiny magnetic"
+                href="https://github.com/SamirYMeshram/mywebsite"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open GitHub Repo</a
+              >
+            </article>
+
+            <article
+              class="project-card card magnetic reveal"
+              data-category="ai"
+            >
+              <div class="card__eyebrow">Python • Audiobook Tool</div>
+              <h3 class="card__title">
+                <a
+                  href="https://github.com/SamirYMeshram/pdf-to-audiobook-V2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: inherit; text-decoration: none"
+                  >PDF to Audiobook V2</a
+                >
+              </h3>
+              <p>
+                A smart PDF-to-audiobook project that analyzes document tone,
+                adapts speaking style, supports OCR for image-based PDFs, and
+                generates a more natural MP3 listening experience.
+              </p>
+              <div class="card__meta">
+                <span class="pill">OCR support</span>
+                <span class="pill">MP3 output</span>
+              </div>
+              <a
+                class="button button--ghost button--tiny magnetic"
+                href="https://github.com/SamirYMeshram/pdf-to-audiobook-V2"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open GitHub Repo</a
+              >
+            </article>
+
+            <article
+              class="project-card card magnetic reveal"
+              data-category="ai"
+            >
+              <div class="card__eyebrow">Python • Translation Tool</div>
+              <h3 class="card__title">
+                <a
+                  href="https://github.com/SamirYMeshram/PDF-Translation-Tool"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: inherit; text-decoration: none"
+                  >PDF Translation Tool</a
+                >
+              </h3>
+              <p>
+                A smart PDF-to-PDF translation system that translates documents
+                into the user’s preferred language while preserving layout,
+                formatting, fonts, colors, and overall visual structure.
+              </p>
+              <div class="card__meta">
+                <span class="pill">Layout preserve</span>
+                <span class="pill">Translated PDF</span>
+              </div>
+              <a
+                class="button button--ghost button--tiny magnetic"
+                href="https://github.com/SamirYMeshram/PDF-Translation-Tool"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open GitHub Repo</a
+              >
+            </article>
+
+            <article
+              class="project-card card magnetic reveal"
+              data-category="platform"
+            >
+              <div class="card__eyebrow">Python • Subtitle Tool</div>
+              <h3 class="card__title">
+                <a
+                  href="https://github.com/SamirYMeshram/Video-to-srt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: inherit; text-decoration: none"
+                  >Video to SRT</a
+                >
+              </h3>
+              <p>
+                An automatic subtitle generation tool that converts video speech
+                into SRT captions using speech recognition, audio enhancement,
+                punctuation restoration, and optimized subtitle segmentation.
+              </p>
+              <div class="card__meta">
+                <span class="pill">Speech to text</span>
+                <span class="pill">SRT captions</span>
+              </div>
+              <a
+                class="button button--ghost button--tiny magnetic"
+                href="https://github.com/SamirYMeshram/Video-to-srt"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open GitHub Repo</a
+              >
+            </article>
+          </div>
+
+          <article class="drawer reveal" id="projectDrawer" aria-live="polite">
+            <div class="drawer__header">
+              <div>
+                <div class="card__eyebrow" id="drawerEyebrow">
+                  Project details
+                </div>
+                <h3 class="card__title" id="drawerTitle">
+                  Use the project links above to open each live project page or
+                  repository.
+                </h3>
+              </div>
+              <button
+                class="icon-button magnetic"
+                id="drawerClose"
+                type="button"
+                aria-label="Close case study"
+              >
+                ×
+              </button>
+            </div>
+
+            <p id="drawerIntro">
+              This section remains available in the layout, while the real
+              project cards above now link directly to live internal project
+              pages and GitHub repositories.
+            </p>
+
+            <div class="drawer__grid">
+              <div class="panel">
+                <h4 class="panel__title">Challenge</h4>
+                <p id="drawerChallenge">
+                  The problem statement will appear here.
+                </p>
+              </div>
+              <div class="panel">
+                <h4 class="panel__title">Approach</h4>
+                <p id="drawerApproach">
+                  The solution approach will appear here.
+                </p>
+              </div>
+              <div class="panel">
+                <h4 class="panel__title">Stack</h4>
+                <p id="drawerStack">The stack summary will appear here.</p>
+              </div>
+              <div class="panel">
+                <h4 class="panel__title">Impact</h4>
+                <p id="drawerImpact">The outcome metrics will appear here.</p>
+              </div>
+            </div>
+
+            <div class="drawer__meta" id="drawerMeta"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-heading__kicker">Project Method</div>
+            <h2>
+              Across different project types, the method stays consistent.
+            </h2>
+            <p>
+              I focus on understanding the problem first, then build the right
+              structure, interface, backend logic, and final polish around that
+              goal.
+            </p>
+          </div>
+
+          <div class="card-grid card-grid--3 method-grid">
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">Read the pressure</div>
+              <h3 class="card__title">
+                What must this product make people feel or understand
+                immediately?
+              </h3>
+              <p>
+                Trust, urgency, calm, sophistication, ease, authority, and
+                clarity all create different interface demands.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">Shape the system</div>
+              <h3 class="card__title">
+                What component language, architecture, and flow will support
+                that feeling at scale?
+              </h3>
+              <p>
+                Strong projects reduce inconsistency through systems, not
+                through over-explaining every page individually.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">Polish with purpose</div>
+              <h3 class="card__title">
+                What details will users feel even if they never consciously
+                notice them?
+              </h3>
+              <p>
+                This is where motion timing, spacing rhythm, states, and
+                performance discipline create the premium difference.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-heading__kicker">Project Takeaways</div>
+            <h2>
+              These projects reflect practical learning across frontend,
+              backend, Python, and full stack product development.
+            </h2>
+            <p>
+              Each project helped strengthen problem solving, system building,
+              interface clarity, implementation confidence, and product
+              thinking.
+            </p>
+          </div>
+
+          <div class="testimonial-slider reveal">
+            <div class="testimonial-track" id="projectTestimonialTrack">
+              <article class="testimonial-card is-active">
+                <p>
+                  “Daily Goal Tracker helped me build a full stack workflow with
+                  authentication, database design, admin task control, and
+                  day-wise reporting in one connected product.”
+                </p>
+                <strong>Supabase Full Stack Project</strong>
+              </article>
+              <article class="testimonial-card">
+                <p>
+                  “QuickBite Delivery helped me apply both frontend and backend
+                  development in one complete web application.”
+                </p>
+                <strong>Full Stack Project</strong>
+              </article>
+              <article class="testimonial-card">
+                <p>
+                  “The PDF tools strengthened my Python skills through OCR,
+                  document processing, translation, and audio workflow
+                  building.”
+                </p>
+                <strong>Python Projects</strong>
+              </article>
+              <article class="testimonial-card">
+                <p>
+                  “Video to SRT improved my understanding of speech processing,
+                  subtitle generation, and practical automation workflows.”
+                </p>
+                <strong>Project-Based Learning</strong>
+              </article>
+            </div>
+
+            <div class="testimonial-controls">
+              <button
+                class="icon-button magnetic"
+                id="projectTestimonialPrev"
+                type="button"
+                aria-label="Previous testimonial"
+              >
+                ←
+              </button>
+              <div class="testimonial-dots" id="projectTestimonialDots"></div>
+              <button
+                class="icon-button magnetic"
+                id="projectTestimonialNext"
+                type="button"
+                aria-label="Next testimonial"
+              >
+                →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <div class="showcase-card projects-cta reveal">
+            <div class="card__eyebrow">What comes next</div>
+            <h2 class="card__title">
+              If these projects match what you want to see, the services page
+              shows what I can build next.
+            </h2>
+            <p>
+              These projects demonstrate my current strengths across full stack
+              development, Supabase apps, Python tools, frontend work, and
+              practical software building.
+            </p>
+            <div class="hero-actions">
+              <a class="button button--primary magnetic" href="services.html"
+                >View Services</a
+              >
+              <a class="button button--ghost magnetic" href="contact.html"
+                >Start a Conversation</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a class="brand" href="index.html">
+            <span class="brand__mark">Samir</span>
+            <span class="brand__dot">.</span>
+          </a>
+          <p class="copy-note">
+            Portfolio project pages for Samir Meshram featuring live project
+            pages and GitHub work across full stack development, Supabase apps,
+            Python tools, and practical software projects.
+          </p>
+          <div class="footer__meta">
+            <span>Based in Nagpur, India</span>
+            <span>Frontend + Backend + Python + Java</span>
+            <span>HTML • CSS • JavaScript • Python</span>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="journey.html">Journey</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html" class="is-current">Projects</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="projects.js"></script>
+  </body>
+</html>

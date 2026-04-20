@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Goal Tracker - Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+</head>
+<body class="login-body">
+  <div class="login-shell">
+    <section class="login-hero">
+      <div>
+        <p class="eyebrow">Supabase Version</p>
+        <h1 class="brand-title">Daily Goal Tracker</h1>
+        <p class="muted">
+          Personal admin login, today checklist, daily submit, full day-wise history, reports, charts, task manager,
+          and all major task groups loaded from your PDF-based routine.
+        </p>
+      </div>
+
+      <div class="help-box">
+        <strong>Included in this full version</strong>
+        <ul class="hero-points">
+          <li>Same master tasks repeat every day</li>
+          <li>Checkbox resets daily by date</li>
+          <li>Only today page can change today's checklist</li>
+          <li>Submit button saves day-wise history</li>
+          <li>Reports for today, yesterday, 7 days, 30 days, month, and custom range</li>
+          <li>Admin page to add, edit, disable, delete, export, and reset tasks</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="login-card">
+      <p class="eyebrow">Private Login</p>
+      <h2>Sign in</h2>
+      <p class="muted">This version stores tasks, daily submissions, reports, and admin changes in Supabase.</p>
+
+      <form id="loginForm" class="auth-form top-gap">
+        <label>
+          <span>Email</span>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="password" placeholder="Your password" required />
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <p id="loginMessage" class="form-message"></p>
+      </form>
+
+      <div class="login-credentials">
+        <strong>Login details</strong>
+        <p>Use the same email and password you created in Supabase Authentication → Users.</p>
+      </div>
+
+      <p class="page-note">After login, open Today Checklist, Reports, and Admin from the left menu.</p>
+    </section>
+  </div>
+
+  <script src="storage.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

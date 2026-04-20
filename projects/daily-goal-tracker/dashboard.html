@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Goal Tracker - Today</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>html{visibility:hidden}</style>
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+  <script src="auth-guard.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div class="logo-box">
+          <p class="eyebrow">Single User Admin</p>
+          <h2>Daily Goal Tracker</h2>
+        </div>
+        <nav class="side-nav">
+          <a class="active" href="dashboard.html">Today Checklist</a>
+          <a href="report.html">Reports & Charts</a>
+          <a href="admin.html">Admin Panel</a>
+        </nav>
+      </div>
+      <div class="sidebar-footer">
+        <button id="logoutBtn" class="btn btn-outline btn-block">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="page-head card">
+        <div>
+          <p class="eyebrow">Today Panel</p>
+          <h1 id="todayHeading">Today Checklist</h1>
+          <p class="muted">Pending tasks stay in the checklist. Tasks completed today move to the submitted section until the next day starts.</p>
+        </div>
+        <div class="header-actions">
+          <div class="date-chip"><span>Date</span> <strong id="todayDateChip"></strong></div>
+          <div class="status-chip"><span>Status</span> <strong id="submitStateChip">Draft</strong></div>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card card"><span>Total Tasks</span><strong id="totalTasksCount">0</strong></article>
+        <article class="stat-card card"><span>Completed Today</span><strong id="completedTasksCount">0</strong></article>
+        <article class="stat-card card"><span>Pending Today</span><strong id="pendingTasksCount">0</strong></article>
+        <article class="stat-card card"><span>Completion</span><strong id="completionRateCount">0%</strong></article>
+        <article class="stat-card card"><span>Submitted</span><strong id="submittedAtCount">Not yet</strong></article>
+      </section>
+
+      <section class="card progress-card">
+        <div class="progress-head">
+          <h3>Progress</h3>
+          <span id="progressLabel">0 / 0 completed</span>
+        </div>
+        <div class="progress-bar"><div id="progressFill"></div></div>
+      </section>
+
+      <section class="card bottom-gap">
+        <div class="toolbar-grid">
+          <input type="text" id="searchInput" placeholder="Search title, category, platform, section" />
+          <select id="categoryFilter"><option value="all">All Categories</option></select>
+          <select id="platformFilter"><option value="all">All Platforms</option></select>
+          <select id="priorityFilter">
+            <option value="all">All Priorities</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+          <select id="statusFilter">
+            <option value="all">All Status</option>
+            <option value="done">Completed</option>
+            <option value="pending">Pending</option>
+          </select>
+          <div class="row-actions">
+            <button id="markVisibleDoneBtn" class="btn btn-outline" type="button">Mark Visible Done</button>
+            <button id="clearTodayDraftBtn" class="btn btn-warning" type="button">Clear Today Draft</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div>
+          <section class="card bottom-gap">
+            <div class="section-head">
+              <h3>Category Progress</h3>
+              <span id="taskListMeta" class="muted small-text"></span>
+            </div>
+            <div id="categoryProgressList" class="category-progress-list"></div>
+          </section>
+
+          <section class="card">
+            <div class="section-head">
+              <h3>Today Checklist</h3>
+              <span id="pendingTaskMeta" class="muted small-text">Pending tasks only</span>
+            </div>
+            <div id="groupedTaskList"></div>
+          </section>
+
+          <section class="card">
+            <div class="section-head">
+              <h3>Submitted / Completed Today</h3>
+              <span id="submittedTaskMeta" class="muted small-text">Completed tasks move here for today</span>
+            </div>
+            <div id="submittedTaskList"></div>
+
+            <div class="sticky-actions">
+              <div class="row-actions">
+                <button id="submitTodayBtn" class="btn btn-success" type="button">Submit Today</button>
+                <a href="report.html" class="btn btn-outline">Open Reports</a>
+                <a href="admin.html" class="btn btn-outline">Open Admin</a>
+              </div>
+              <p id="dashboardMessage" class="form-message"></p>
+            </div>
+          </section>
+        </div>
+
+        <div>
+          <section class="card bottom-gap">
+            <div class="section-head"><h3>Today Summary</h3></div>
+            <div id="todaySummaryBox" class="list-stack"></div>
+          </section>
+
+          <section class="card bottom-gap">
+            <div class="section-head"><h3>Quick Notes</h3></div>
+            <div class="help-box">
+              Same tasks repeat every day. A new date starts with fresh checkboxes. Re-submitting the same day updates that same day's rows in Supabase instead of creating duplicates.
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="section-head"><h3>Last 12 Activity Logs</h3></div>
+            <div id="recentActivityList" class="list-stack"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="storage.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

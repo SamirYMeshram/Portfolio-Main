@@ -1,0 +1,1471 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Samir Meshram | Full Stack Developer</title>
+
+  <meta
+    name="description"
+    content="Samir Meshram is a full stack developer specializing in backend systems, Python, Java, web applications, and practical digital solutions."
+  />
+
+  <meta
+    name="keywords"
+    content="Samir Meshram, Full Stack Developer, Python Developer, Java Developer, Backend Developer, Web Developer, Portfolio"
+  />
+
+  <meta name="author" content="Samir Meshram" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b1020" />
+
+  <link rel="canonical" href="https://samirmeshram.in/" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://samirmeshram.in/" />
+  <meta property="og:title" content="Samir Meshram | Full Stack Developer" />
+  <meta
+    property="og:description"
+    content="Portfolio of Samir Meshram — full stack developer focused on backend systems, Python, Java, and modern web applications."
+  />
+  <meta property="og:site_name" content="Samir Meshram" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Samir Meshram | Full Stack Developer" />
+  <meta
+    name="twitter:description"
+    content="Portfolio of Samir Meshram — full stack developer focused on backend systems, Python, Java, and modern web applications."
+  />
+</head>
+
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__logo">SamirMeshram<span>.</span></div>
+    <div class="preloader__text">Samir Meshram's Portfolio</div>
+    <div class="preloader__bar"><span></span></div>
+  </div>
+
+  <div class="page-progress" aria-hidden="true"></div>
+  <div class="cursor cursor-dot" aria-hidden="true"></div>
+  <div class="cursor cursor-ring" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <button class="back-to-top" aria-label="Back to top">
+    <span>↑</span>
+  </button>
+
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <header class="header" id="top">
+    <nav class="container nav">
+      <a class="brand magnetic" href="index.html" aria-label="Go to home section">
+        <span class="brand__mark">Samir M</span>
+        <span class="brand__dot">.</span>
+      </a>
+
+      <div class="nav__links" id="desktopNav">
+        <a href="about.html">About</a>
+        <a href="journey.html">Journey</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle magnetic" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-toggle__sun">☀</span>
+          <span class="theme-toggle__moon">☾</span>
+        </button>
+        <a class="button button--tiny button--ghost magnetic desktop-only" href="contact.html">Let's Talk</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"
+          aria-controls="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="about.html">About</a>
+      <a href="journey.html">Journey</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section section--hero" id="home">
+      <div class="hero__spotlight"></div>
+      <div class="container hero__grid">
+        <div class="hero__content reveal reveal--left">
+          <div class="eyebrow">
+            <span class="eyebrow__pulse"></span>
+            Full Stack Developer • Python & Java • Data Scientist
+          </div>
+          <h1>
+            I build
+            <span class="gradient-text">high-impact digital products</span>
+            that feel cinematic, modern, and fast.
+          </h1>
+          <p class="hero__lead">
+            I’m Samir Meshram, a full stack developer specializing in backend
+            systems with Python and Java, and a vibe coder focused on
+            resilient architecture, smooth experiences, and building web apps
+            that don’t just work — they leave a lasting impression.
+          </p>
+
+          <div class="hero__typing glass-card">
+            <span class="hero__typing-label">Currently shaping:</span>
+            <span class="hero__typing-value" id="typedRole"></span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="projects.html" class="button button--primary magnetic">
+              Explore Projects
+            </a>
+            <a href="contact.html" class="button button--ghost magnetic">
+              Hire Me
+            </a>
+          </div>
+
+          <div class="hero__mini-grid">
+            <article class="mini-card glass-card magnetic">
+              <strong>40+</strong>
+              <span>Projects launched</span>
+            </article>
+            <article class="mini-card glass-card magnetic">
+              <strong>6+</strong>
+              <span>Years as an web&app developer</span>
+            </article>
+            <article class="mini-card glass-card magnetic">
+              <strong>7+</strong>
+              <span>Years as an python and java developer</span>
+            </article>
+          </div>
+
+          <div class="hero__socials">
+            <a class="tag magnetic" href="https://www.linkedin.com/in/samir-meshram/" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
+            <a class="tag magnetic" href="https://github.com/SamirYMeshram" target="_blank"
+              rel="noopener noreferrer">GitHub</a>
+            <a class="tag magnetic" href="https://x.com/SameerMesh91741" target="_blank"
+              rel="noopener noreferrer">Twitter</a>
+            <a class="tag magnetic" href="https://dev.to/samirymeshram" target="_blank"
+              rel="noopener noreferrer">Dev.to</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal--right">
+          <div class="code-window glass-card tilt-card" data-tilt>
+            <div class="code-window__top">
+              <div class="window-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="window-title">experience.config.ts</div>
+            </div>
+            <div class="code-window__body">
+              <div class="code-line">
+                <span class="code-line__num">01</span><span class="code-key">const</span> developer =
+                <span class="code-brace">{</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line__num">02</span>&nbsp;&nbsp;name:
+                <span class="code-string">"Samir Meshram"</span>,
+              </div>
+              <div class="code-line">
+                <span class="code-line__num">03</span>&nbsp;&nbsp;role:
+                <span class="code-string">"Full Stack Developer"</span>,
+              </div>
+              <div class="code-line">
+                <span class="code-line__num">04</span>&nbsp;&nbsp;obsession:
+                <span class="code-string">"Backend, Python, Java</span>,
+              </div>
+              <div class="code-line">
+                <span class="code-line__num">05</span>&nbsp;&nbsp;stack:
+                [<span class="code-string">"HTML"</span>,
+                <span class="code-string">"CSS"</span>,
+                <span class="code-string">Java</span>,
+                <span class="code-string">Python</span>],
+              </div>
+              <div class="code-line">
+                <span class="code-line__num">06</span>&nbsp;&nbsp;mindset:
+                <span class="code-string">Clean, practical backend solutions</span>,
+              </div>
+              <div class="code-line">
+                <span class="code-line__num">07</span>&nbsp;&nbsp;availableFor:
+                <span class="code-string">Full-time•Backend•Data Science"</span>
+              </div>
+              <div class="code-line">
+                <span class="code-line__num">08</span><span class="code-brace">}</span>;
+              </div>
+            </div>
+          </div>
+
+          <article class="floating-card floating-card--primary glass-card magnetic">
+            <div class="floating-card__label">Performance Score</div>
+            <div class="floating-card__value">95/100</div>
+            <p>Focused on backend, clean code, and practical solutions.</p>
+          </article>
+
+          <article class="floating-card floating-card--secondary glass-card magnetic">
+            <div class="floating-card__label">Specialized In</div>
+            <div class="floating-card__chips">
+              <span>Java & Python developer</span>
+              <span>full stack developer</span>
+              <span>modern web & app</span>
+            </div>
+          </article>
+
+          <article class="floating-card floating-card--tertiary glass-card magnetic">
+            <div class="floating-card__label">Typical Projects</div>
+            <ul>
+              <li>Backend systems</li>
+              <li>Web applications</li>
+              <li>Java projects</li>
+              <li>Python solutions</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="container stack-strip reveal">
+        <div class="stack-strip__label">Trusted stack</div>
+        <div class="stack-marquee">
+          <div class="stack-marquee__track">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+            <span>AWS</span>
+            <span>Figma</span>
+            <span>REST APIs</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>MySQL</span>
+            <span>MongoDB</span>
+            <span>GraphQL</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+            <span>AWS</span>
+            <span>Figma</span>
+            <span>REST APIs</span>
+            <span>GraphQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__kicker">About Me</p>
+          <h2>
+            A developer focused on backend, scalable systems, and practical
+            solutions.
+          </h2>
+          <p>
+            I build clean and reliable web applications with a strong focus on
+            backend development, Java, Python, and data-driven problem
+            solving.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal reveal--left">
+            <div class="portrait-panel glass-card tilt-card" data-tilt>
+              <div class="portrait-halo"></div>
+              <div class="portrait-core">
+                <img src="samir.png" alt="Samir Meshram" class="portrait-img" />
+              </div>
+              <div class="portrait-card portrait-card--top">
+                <span>Product-first mindset</span>
+              </div>
+              <div class="portrait-card portrait-card--bottom">
+                <span>Scalable code + practical solutions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-copy reveal reveal--right">
+            <div class="copy-block glass-card">
+              <h3>What makes my work different</h3>
+              <p>
+                I give equal importance to both frontend and backend
+                development. On the frontend, I focus on building responsive,
+                clean, and user-friendly interfaces that feel smooth, clear,
+                and engaging across different devices.
+              </p>
+              <p>
+                On the backend, I focus on performance, maintainability, and
+                strong system design. That includes building reliable APIs,
+                handling data efficiently, creating secure authentication
+                flows, and writing code that supports scalable and practical
+                applications.
+              </p>
+            </div>
+
+            <div class="metric-grid">
+              <article class="metric-card glass-card magnetic">
+                <strong data-counter="6">0</strong>
+                <span>Years building digital products</span>
+              </article>
+              <article class="metric-card glass-card magnetic">
+                <strong data-counter="40">0</strong>
+                <span>Completed websites and apps</span>
+              </article>
+              <article class="metric-card glass-card magnetic">
+                <strong data-counter="18">0</strong>
+                <span>Core areas: Frontend, Backend, Data Science</span>
+              </article>
+              <article class="metric-card glass-card magnetic">
+                <strong data-counter="12">0</strong>
+                <span>Technologies used across projects</span>
+              </article>
+            </div>
+
+            <div class="about-highlights">
+              <div class="highlight-pill magnetic">
+                Responsive frontend development
+              </div>
+              <div class="highlight-pill magnetic">
+                Clean UI and user experience
+              </div>
+              <div class="highlight-pill magnetic">
+                Scalable backend development
+              </div>
+              <div class="highlight-pill magnetic">
+                Java and Python projects
+              </div>
+              <div class="highlight-pill magnetic">
+                Clean API integrations
+              </div>
+              <div class="highlight-pill magnetic">
+                Performance and problem solving
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="journey">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__kicker">Journey</p>
+          <h2>
+            A timeline built around shipping meaningful work, not just
+            collecting titles.
+          </h2>
+          <p>
+            My growth has come from solving real product problems — building
+            systems, guiding launches, and making ideas look and perform
+            better than expected.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-item__year">2026</span>
+            <div class="timeline-item__content glass-card">
+              <h3>Senior Full Stack Developer • Personal Projects</h3>
+              <p>
+                Designing premium brand websites, app frontends, and internal
+                platforms with an emphasis on motion, conversion, and
+                maintainable architecture.
+              </p>
+              <ul>
+                <li>
+                  Launched multi-page experiences with advanced animation
+                  systems.
+                </li>
+                <li>
+                  Improved frontend performance budgets and code consistency.
+                </li>
+                <li>
+                  Led UI refinement across marketing and application surfaces.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-item__year">2025</span>
+            <div class="timeline-item__content glass-card">
+              <h3>
+                <a href="https://github.com/SamirYMeshram/mywebsite" target="_blank" rel="noopener noreferrer"
+                  style="color: inherit; text-decoration: none">Full Stack Developer • QuickBite Delivery</a>
+              </h3>
+              <p>
+                Built a full-stack food delivery web application with customer
+                ordering features and a working admin panel for managing
+                products, users, orders, and website operations.
+              </p>
+              <ul>
+                <li>
+                  Developed responsive frontend pages for food ordering and
+                  navigation.
+                </li>
+                <li>
+                  Built admin panel features to manage platform content and
+                  orders.
+                </li>
+                <li>
+                  Integrated backend logic for authentication and core website
+                  workflows.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-item__year">2025</span>
+            <div class="timeline-item__content glass-card">
+              <h3>
+                <a href="https://github.com/SamirYMeshram/PDF-Translation-Tool" target="_blank"
+                  rel="noopener noreferrer" style="color: inherit; text-decoration: none">Python Developer • PDF
+                  Translation Tool</a>
+              </h3>
+              <p>
+                Created a smart PDF-to-PDF translation system that translates
+                documents while preserving layout, formatting, fonts, colors,
+                and overall document structure.
+              </p>
+              <ul>
+                <li>
+                  Built translated PDF generation with preserved visual
+                  formatting.
+                </li>
+                <li>
+                  Added OCR support for image-based and scanned PDF files.
+                </li>
+                <li>
+                  Improved translation reliability for large documents with
+                  structured processing.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-item__year">2024</span>
+            <div class="timeline-item__content glass-card">
+              <h3>
+                <a href="https://github.com/SamirYMeshram/pdf-to-audiobook-V2" target="_blank" rel="noopener noreferrer"
+                  style="color: inherit; text-decoration: none">Python Developer • PDF to Audiobook V2</a>
+              </h3>
+              <p>
+                Developed a college project that analyzes PDF content, adapts
+                speaking style based on tone, and converts text into a natural
+                audiobook experience saved in MP3 format.
+              </p>
+              <ul>
+                <li>
+                  Built PDF text extraction and audiobook generation workflow.
+                </li>
+                <li>
+                  Added tone-aware narration for story-based and professional
+                  content.
+                </li>
+                <li>
+                  Implemented OCR support for image-based PDFs and scanned
+                  documents.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-item__year">2024</span>
+            <div class="timeline-item__content glass-card">
+              <h3>
+                <a href="https://github.com/SamirYMeshram/Video-to-srt" target="_blank" rel="noopener noreferrer"
+                  style="color: inherit; text-decoration: none">Python Developer • Video to SRT</a>
+              </h3>
+              <p>
+                Created an automatic subtitle generation tool that converts
+                video speech into SRT captions with improved readability,
+                timestamps, and subtitle segmentation.
+              </p>
+              <ul>
+                <li>
+                  Built speech-to-subtitle generation using automated
+                  transcription.
+                </li>
+                <li>
+                  Enhanced audio processing to improve subtitle accuracy.
+                </li>
+                <li>
+                  Added punctuation restoration and optimized subtitle output
+                  formatting.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-item__year">2024</span>
+            <div class="timeline-item__content glass-card">
+              <h3>Full Stack Engineer • SaaS Platform</h3>
+              <p>
+                Developed feature-rich dashboards, authentication workflows,
+                payment-connected user flows, and analytics tooling for
+                fast-moving software products.
+              </p>
+              <ul>
+                <li>
+                  Built modular dashboard systems with reusable UI patterns.
+                </li>
+                <li>
+                  Created Node-powered APIs and secure role-based access
+                  flows.
+                </li>
+                <li>
+                  Collaborated closely with founders, designers, and
+                  marketers.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-item__year">2022</span>
+            <div class="timeline-item__content glass-card">
+              <h3>Frontend Developer • Creative Agency</h3>
+              <p>
+                Transformed high-fidelity design concepts into responsive,
+                interactive websites for startups and brands seeking a strong
+                first impression.
+              </p>
+              <ul>
+                <li>
+                  Implemented sophisticated layouts and scroll-based
+                  storytelling.
+                </li>
+                <li>Improved motion polish without sacrificing usability.</li>
+                <li>Helped shape component libraries for faster delivery.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-item__year">2020</span>
+            <div class="timeline-item__content glass-card">
+              <h3>Independent Developer • Freelance Projects</h3>
+              <p>
+                Worked directly with clients to build portfolios, landing
+                pages, e-commerce stores, and interactive web experiences from
+                scratch.
+              </p>
+              <ul>
+                <li>
+                  Owned discovery, design implementation, and deployment.
+                </li>
+                <li>
+                  Balanced visual ambitions with practical business goals.
+                </li>
+                <li>
+                  Built a reputation for quality, speed, and reliable
+                  communication.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__kicker">Skills</p>
+          <h2>
+            Strong frontend and backend skills with practical experience in
+            full stack development.
+          </h2>
+          <p>
+            I focus on building clean user interfaces, reliable backend
+            systems, and real-world solutions using Java, Python, JavaScript,
+            and modern web technologies.
+          </p>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-chart glass-card reveal reveal--left">
+            <h3>Core capability map</h3>
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span>Full Stack Development</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-meter__bar">
+                <span style="--level: 95%"></span>
+              </div>
+            </div>
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span>Backend Development</span>
+                <span>92%</span>
+              </div>
+              <div class="skill-meter__bar">
+                <span style="--level: 92%"></span>
+              </div>
+            </div>
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span>Java Development</span>
+                <span>89%</span>
+              </div>
+              <div class="skill-meter__bar">
+                <span style="--level: 89%"></span>
+              </div>
+            </div>
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span>Python Development</span>
+                <span>91%</span>
+              </div>
+              <div class="skill-meter__bar">
+                <span style="--level: 91%"></span>
+              </div>
+            </div>
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span>Data Science</span>
+                <span>82%</span>
+              </div>
+              <div class="skill-meter__bar">
+                <span style="--level: 82%"></span>
+              </div>
+            </div>
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span>Product Strategy</span>
+                <span>86%</span>
+              </div>
+              <div class="skill-meter__bar">
+                <span style="--level: 86%"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-stack reveal reveal--right">
+            <div class="tool-card glass-card magnetic">
+              <h3>Frontend</h3>
+              <p>
+                HTML5, CSS3, JavaScript, responsive design, clean UI, and practical web interfaces.
+              </p>
+            </div>
+            <div class="tool-card glass-card magnetic">
+              <h3>Backend</h3>
+              <p>
+                Java, Python, REST APIs, authentication, database handling, and scalable backend logic.
+              </p>
+            </div>
+            <div class="tool-card glass-card magnetic">
+              <h3>Databases</h3>
+              <p>
+                MySQL, MongoDB, structured data handling, query design, and backend integration.
+              </p>
+            </div>
+            <div class="tool-card glass-card magnetic">
+              <h3>Data Science</h3>
+              <p>
+                Data analysis, Python-based workflows, problem solving, and project-based practical learning.
+              </p>
+            </div>
+          </div>
+          <div class="skill-cloud reveal">
+            <span class="magnetic">Responsive Layouts</span>
+            <span class="magnetic">Frontend Development</span>
+            <span class="magnetic">Backend Development</span>
+            <span class="magnetic">REST APIs</span>
+            <span class="magnetic">Authentication</span>
+            <span class="magnetic">Database Design</span>
+            <span class="magnetic">Java Development</span>
+            <span class="magnetic">Python Development</span>
+            <span class="magnetic">Data Science</span>
+            <span class="magnetic">Problem Solving</span>
+            <span class="magnetic">Clean Code</span>
+            <span class="magnetic">Scalable Architecture</span>
+            <span class="magnetic">API Security</span>
+            <span class="magnetic">Performance Optimization</span>
+            <span class="magnetic">UI Components</span>
+            <span class="magnetic">Full Stack Projects</span>
+          </div>
+        </div>
+    </section>
+
+    <section class="section section--muted" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__kicker">Projects</p>
+          <h2>
+            Selected work built to prove taste, technical depth, and product
+            thinking.
+          </h2>
+          <p>
+            These project cards are styled as premium case-study previews and
+            include filtering to make the experience feel more dynamic.
+          </p>
+        </div>
+
+        <div class="project-filters reveal" role="tablist" aria-label="Project filters">
+          <button class="filter-button is-active magnetic" data-filter="all">
+            All
+          </button>
+          <button class="filter-button magnetic" data-filter="frontend">
+            Frontend
+          </button>
+          <button class="filter-button magnetic" data-filter="fullstack">
+            Full Stack
+          </button>
+          <button class="filter-button magnetic" data-filter="branding">
+            Branding
+          </button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card reveal" data-category="fullstack">
+            <div class="project-card__visual project-card__visual--one">
+              <div class="screen shell">
+                <div class="screen__nav"></div>
+                <div class="screen__chart"></div>
+                <div class="screen__bars">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__badge">Full Stack Web App</div>
+              <h3>QuickBite Delivery</h3>
+              <p>
+                A full-stack food delivery web application with customer ordering flows
+                and a working admin panel to manage products, users, orders, and overall
+                platform operations.
+              </p>
+              <div class="project-tags">
+                <span>Food Delivery</span>
+                <span>Admin Panel</span>
+                <span>Full Stack</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SamirYMeshram/mywebsite" target="_blank" rel="noopener noreferrer">GitHub
+                  Repo</a>
+                <a href="https://github.com/SamirYMeshram/mywebsite" target="_blank" rel="noopener noreferrer">Open
+                  Project</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="ai">
+            <div class="project-card__visual project-card__visual--two">
+              <div class="mock-browser">
+                <div class="mock-browser__hero"></div>
+                <div class="mock-browser__grid">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__badge">Python AI Project</div>
+              <h3>PDF to Audiobook V2</h3>
+              <p>
+                A smart PDF-to-audiobook project that analyzes document tone, adjusts
+                speaking style, and converts text into a more natural audiobook
+                experience saved in MP3 format.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>OCR</span>
+                <span>MP3 Output</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SamirYMeshram/pdf-to-audiobook-V2" target="_blank"
+                  rel="noopener noreferrer">GitHub Repo</a>
+                <a href="https://github.com/SamirYMeshram/pdf-to-audiobook-V2" target="_blank"
+                  rel="noopener noreferrer">Open Project</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="ai">
+            <div class="project-card__visual project-card__visual--three">
+              <div class="device">
+                <div class="device__screen"></div>
+                <div class="device__dock"></div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__badge">Document Translation Tool</div>
+              <h3>PDF Translation Tool</h3>
+              <p>
+                A smart PDF-to-PDF translation system that translates documents into the
+                user's preferred language while preserving layout, fonts, colors,
+                formatting, and overall visual structure.
+              </p>
+              <div class="project-tags">
+                <span>PDF Translation</span>
+                <span>Layout Preserve</span>
+                <span>Python Tool</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SamirYMeshram/PDF-Translation-Tool" target="_blank"
+                  rel="noopener noreferrer">GitHub Repo</a>
+                <a href="https://github.com/SamirYMeshram/PDF-Translation-Tool" target="_blank"
+                  rel="noopener noreferrer">Open Project</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="tool">
+            <div class="project-card__visual project-card__visual--four">
+              <div class="crm-card">
+                <div class="crm-card__left"></div>
+                <div class="crm-card__right">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__badge">Subtitle Generator</div>
+              <h3>Video to SRT</h3>
+              <p>
+                An automatic subtitle generation tool that converts video speech into SRT
+                captions using speech recognition, audio enhancement, punctuation
+                restoration, and optimized subtitle segmentation.
+              </p>
+              <div class="project-tags">
+                <span>Speech to Text</span>
+                <span>SRT Output</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/SamirYMeshram/Video-to-srt" target="_blank" rel="noopener noreferrer">GitHub
+                  Repo</a>
+                <a href="https://github.com/SamirYMeshram/Video-to-srt" target="_blank" rel="noopener noreferrer">Open
+                  Project</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card glass-card reveal" data-category="fullstack">
+            <div class="project-card__visual project-card__visual--one">
+              <div class="screen shell">
+                <div class="screen__nav"></div>
+                <div class="screen__chart"></div>
+                <div class="screen__bars">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__badge">Featured SaaS</div>
+              <h3>Nebula Analytics Dashboard</h3>
+              <p>
+                A data-heavy SaaS experience with dashboards, user roles,
+                premium visual hierarchy, and backend-ready API architecture.
+              </p>
+              <div class="project-tags">
+                <span>Dashboard UI</span>
+                <span>Auth Flow</span>
+                <span>API-first</span>
+              </div>
+              <div class="project-links">
+                <a href="projects.html">Live Preview</a>
+                <a href="projects.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="branding">
+            <div class="project-card__visual project-card__visual--two">
+              <div class="mock-browser">
+                <div class="mock-browser__hero"></div>
+                <div class="mock-browser__grid">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__badge">Premium Brand Site</div>
+              <h3>Solstice Creative Studio</h3>
+              <p>
+                A cinematic agency portfolio concept with immersive gradients,
+                magnetic CTAs, smooth scrolling, and storytelling sections.
+              </p>
+              <div class="project-tags">
+                <span>Brand Website</span>
+                <span>Motion UI</span>
+                <span>Storytelling</span>
+              </div>
+              <div class="project-links">
+                <a href="projects.html">Live Preview</a>
+                <a href="projects.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="frontend">
+            <div class="project-card__visual project-card__visual--three">
+              <div class="device">
+                <div class="device__screen"></div>
+                <div class="device__dock"></div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__badge">Interactive Product UI</div>
+              <h3>Pulse Fitness Experience</h3>
+              <p>
+                A sleek wellness platform interface with animated sections,
+                strong mobile responsiveness, and conversion-centered layout
+                choices.
+              </p>
+              <div class="project-tags">
+                <span>Responsive</span>
+                <span>Landing UX</span>
+                <span>Visual Polish</span>
+              </div>
+              <div class="project-links">
+                <a href="projects.html">Live Preview</a>
+                <a href="projects.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="fullstack">
+            <div class="project-card__visual project-card__visual--four">
+              <div class="crm-card">
+                <div class="crm-card__left"></div>
+                <div class="crm-card__right">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__badge">CRM Platform</div>
+              <h3>Orbit Client Management Suite</h3>
+              <p>
+                A full stack business platform concept with admin tools,
+                customer tracking, billing workflows, and secure API planning.
+              </p>
+              <div class="project-tags">
+                <span>Full Stack</span>
+                <span>Admin System</span>
+                <span>Scalable</span>
+              </div>
+              <div class="project-links">
+                <a href="projects.html">Live Preview</a>
+                <a href="projects.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="branding">
+            <div class="project-card__visual project-card__visual--five">
+              <div class="commerce">
+                <div class="commerce__banner"></div>
+                <div class="commerce__products">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__badge">Commerce Experience</div>
+              <h3>Lumen Fashion Storefront</h3>
+              <p>
+                A high-end e-commerce frontend concept with editorial layouts,
+                immersive banners, and polished add-to-cart interaction
+                patterns.
+              </p>
+              <div class="project-tags">
+                <span>E-commerce</span>
+                <span>Editorial Layout</span>
+                <span>Luxury Feel</span>
+              </div>
+              <div class="project-links">
+                <a href="projects.html">Live Preview</a>
+                <a href="projects.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="frontend">
+            <div class="project-card__visual project-card__visual--six">
+              <div class="docs-panel">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__badge">Developer Platform</div>
+              <h3>Atlas Documentation Hub</h3>
+              <p>
+                A developer-focused docs portal concept with organized
+                content, searchable components, and a clean, dark-themed
+                visual identity.
+              </p>
+              <div class="project-tags">
+                <span>Docs UX</span>
+                <span>Dark Theme</span>
+                <span>Component System</span>
+              </div>
+              <div class="project-links">
+                <a href="projects.html">Live Preview</a>
+                <a href="projects.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__kicker">Services</p>
+          <h2>What I can build for you from idea to working product.</h2>
+          <p>
+            I work on both frontend and backend development, building practical web
+            applications, backend systems, and Python-based solutions.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card glass-card reveal magnetic">
+            <div class="service-card__icon">✦</div>
+            <h3>Frontend Development</h3>
+            <p>
+              Responsive websites, clean user interfaces, and modern frontend
+              layouts built for clarity, usability, and better user experience.
+            </p>
+          </article>
+          <article class="service-card glass-card reveal magnetic">
+            <div class="service-card__icon">⬢</div>
+            <h3>Full Stack Web Apps</h3>
+            <p>
+              Complete web applications with frontend, backend, database handling,
+              authentication, and practical real-world functionality.
+            </p>
+          </article>
+          <article class="service-card glass-card reveal magnetic">
+            <div class="service-card__icon">◎</div>
+            <h3>Backend Development</h3>
+            <p>
+              Scalable backend logic, REST APIs, authentication systems, and clean
+              server-side architecture using practical development approaches.
+            </p>
+          </article>
+          <article class="service-card glass-card reveal magnetic">
+            <div class="service-card__icon">◇</div>
+            <h3>Java & Python Projects</h3>
+            <p>
+              Project development using Java and Python for backend systems,
+              automation tools, academic work, and problem-solving applications.
+            </p>
+          </article>
+          <article class="service-card glass-card reveal magnetic">
+            <div class="service-card__icon">▣</div>
+            <h3>API Integration</h3>
+            <p>
+              Integration of third-party services, forms, authentication flows, and
+              connected features that support complete application workflows.
+            </p>
+          </article>
+          <article class="service-card glass-card reveal magnetic">
+            <div class="service-card__icon">✺</div>
+            <h3>Data Science Solutions</h3>
+            <p>
+              Data-focused projects, Python-based analysis, and practical solutions
+              connected to real-world and academic problem solving.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section section--muted" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__kicker">Process</p>
+          <h2>
+            How I turn ambitious ideas into refined digital experiences.
+          </h2>
+          <p>
+            A strong outcome rarely comes from jumping straight into code. It
+            comes from clarity, structure, visual intent, and disciplined
+            execution.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card glass-card reveal">
+            <span class="process-card__number">01</span>
+            <h3>Discover</h3>
+            <p>
+              I map goals, users, references, brand direction, and success
+              metrics before shaping the solution.
+            </p>
+          </article>
+          <article class="process-card glass-card reveal">
+            <span class="process-card__number">02</span>
+            <h3>Design Direction</h3>
+            <p>
+              I define layout energy, visual language, motion density, and
+              hierarchy so the interface has character.
+            </p>
+          </article>
+          <article class="process-card glass-card reveal">
+            <span class="process-card__number">03</span>
+            <h3>Architecture</h3>
+            <p>
+              I structure the frontend and backend logic for scale,
+              readability, and future extension.
+            </p>
+          </article>
+          <article class="process-card glass-card reveal">
+            <span class="process-card__number">04</span>
+            <h3>Build</h3>
+            <p>
+              I implement polished components, responsive sections,
+              integrations, and meaningful interactions.
+            </p>
+          </article>
+          <article class="process-card glass-card reveal">
+            <span class="process-card__number">05</span>
+            <h3>Refine</h3>
+            <p>
+              I tighten spacing, performance, animation timing, and usability
+              details until the product feels complete.
+            </p>
+          </article>
+          <article class="process-card glass-card reveal">
+            <span class="process-card__number">06</span>
+            <h3>Launch</h3>
+            <p>
+              I prepare the project for deployment, smooth handoff, and
+              confident long-term evolution.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="container">
+        <div class="showcase-banner glass-card reveal">
+          <div>
+            <p class="section-heading__kicker">Impact</p>
+            <h2>
+              Good visuals get attention. Good systems earn trust. Great
+              products do both.
+            </h2>
+          </div>
+          <div class="showcase-banner__stats">
+            <article>
+              <strong>3.1x</strong>
+              <span>Average engagement lift on redesigned pages</span>
+            </article>
+            <article>
+              <strong>52%</strong>
+              <span>Faster iteration with reusable UI patterns</span>
+            </article>
+            <article>
+              <strong>24/7</strong>
+              <span>Availability of deployed, stable digital experiences</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__kicker">Testimonials</p>
+          <h2>
+            What people say after seeing the finished product in motion.
+          </h2>
+          <p>
+            A strong portfolio should feel credible, so this section includes
+            a smooth slider powered by vanilla JavaScript.
+          </p>
+        </div>
+
+        <div class="testimonial-shell reveal">
+          <button class="testimonial-nav testimonial-nav--prev magnetic" id="testimonialPrev"
+            aria-label="Previous testimonial">
+            ←
+          </button>
+          <div class="testimonial-track" id="testimonialTrack">
+            <article class="testimonial-card glass-card is-active">
+              <p>
+                “The final website felt like a premium brand film translated
+                into code. The motion, layout, and polish changed how people
+                perceived our company instantly.”
+              </p>
+              <div class="testimonial-card__author">
+                <strong>Priya Kapoor</strong>
+                <span>Founder, Solstice Creative</span>
+              </div>
+            </article>
+            <article class="testimonial-card glass-card">
+              <p>
+                “What impressed us most was the balance of aesthetics and
+                structure. The interface looked elite, but the codebase was
+                also organized for growth.”
+              </p>
+              <div class="testimonial-card__author">
+                <strong>Daniel Brooks</strong>
+                <span>Product Lead, Nebula Analytics</span>
+              </div>
+            </article>
+            <article class="testimonial-card glass-card">
+              <p>
+                “Every detail felt intentional. We asked for something modern,
+                but what we received felt far beyond that — clean, smooth, and
+                memorable.”
+              </p>
+              <div class="testimonial-card__author">
+                <strong>Anaya Mehta</strong>
+                <span>Brand Strategist, Lumen</span>
+              </div>
+            </article>
+          </div>
+          <button class="testimonial-nav testimonial-nav--next magnetic" id="testimonialNext"
+            aria-label="Next testimonial">
+            →
+          </button>
+        </div>
+
+        <div class="testimonial-dots" id="testimonialDots" aria-label="Testimonial indicators"></div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__kicker">FAQ</p>
+          <h2>
+            Answers to the questions clients usually ask before we build
+            something serious.
+          </h2>
+          <p>
+            This accordion keeps the page interactive while making the
+            template feel more complete and conversion-ready.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item glass-card reveal">
+            <button class="faq-question" type="button">
+              <span>Can this portfolio template be customized with my own name
+                and project details?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Everything is written in clean HTML, CSS, and JavaScript
+                so you can easily replace the name, text, project items,
+                colors, and contact details.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item glass-card reveal">
+            <button class="faq-question" type="button">
+              <span>Does it work on mobile screens and smaller devices?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. The layout is fully responsive with stacked grids, a
+                mobile navigation menu, scaled text, and touch-friendly
+                interaction behavior.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item glass-card reveal">
+            <button class="faq-question" type="button">
+              <span>Can I connect the contact form to a real backend later?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Absolutely. The current demo uses a mailto-based handler, but
+                it can be swapped with Formspree, EmailJS, a server endpoint,
+                or any backend workflow.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item glass-card reveal">
+            <button class="faq-question" type="button">
+              <span>Are the animations heavy?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The animations are designed to feel rich while remaining
+                performant. They also respect reduced-motion preferences for
+                better accessibility.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container">
+        <div class="cta-panel glass-card reveal">
+          <div>
+            <p class="section-heading__kicker">Ready to build?</p>
+            <h2>
+              Let’s create a website or product that actually feels
+              unforgettable.
+            </h2>
+            <p>
+              Strong design gets noticed. Strong engineering keeps the
+              experience sharp, stable, and scalable. I bring both.
+            </p>
+          </div>
+          <a href="contact.html" class="button button--primary magnetic">Start a Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__kicker">Contact</p>
+          <h2>If you want modern, bold, high-end work — let’s talk.</h2>
+          <p>
+            This section is designed to feel like the closing statement of the
+            portfolio: confident, polished, and ready for conversion.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-copy reveal reveal--left">
+            <div class="contact-card glass-card">
+              <h3>Let's create something that raises the bar.</h3>
+              <p>
+                Whether you need a premium portfolio, a startup landing page,
+                a scalable application interface, or a complete full stack
+                build, I can help shape and ship it.
+              </p>
+              <div class="contact-points">
+                <div>
+                  <span>Email</span>
+                  <strong>samm9421@gmail.com</strong>
+                </div>
+                <div>
+                  <span>Location</span>
+                  <strong>Remote • Worldwide</strong>
+                </div>
+                <div>
+                  <span>Response time</span>
+                  <strong>Usually within 24 hours</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="availability-card glass-card magnetic">
+              <div class="availability-card__status">
+                <span class="eyebrow__pulse"></span>
+                Open for select freelance and full-time opportunities
+              </div>
+              <p>
+                Ideal for founders, agencies, creators, and teams who care
+                deeply about presentation, quality, and execution.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal reveal--right">
+            <form class="contact-form glass-card" id="contactForm">
+              <div class="form-grid">
+                <label>
+                  <span>Your Name</span>
+                  <input type="text" name="name" placeholder="Enter your name" required />
+                </label>
+                <label>
+                  <span>Email Address</span>
+                  <input type="email" name="email" placeholder="Enter your email" required />
+                </label>
+                <label>
+                  <span>Project Type</span>
+                  <input type="text" name="project" placeholder="Portfolio, SaaS, landing page..." required />
+                </label>
+                <label>
+                  <span>Budget Range</span>
+                  <input type="text" name="budget" placeholder="Your estimated budget" />
+                </label>
+                <label class="form-grid__full">
+                  <span>Project Brief</span>
+                  <textarea name="message" rows="7" placeholder="Tell me about your idea, goals, style, and timeline."
+                    required></textarea>
+                </label>
+              </div>
+
+              <div class="contact-form__actions">
+                <button class="button button--primary magnetic" type="submit">
+                  Send Project Inquiry
+                </button>
+                <p class="form-note" id="formNote">
+                  The demo opens your email app using a mailto link. Replace
+                  it with your backend or email service anytime.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <span class="brand__mark">Samir Meshram</span>
+          <span class="brand__dot">.</span>
+        </a>
+        <p>
+          Designed for people who want a portfolio that feels more like a
+          digital experience than a plain website.
+        </p>
+      </div>
+      <div class="footer__links">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

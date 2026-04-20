@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About Samir Meshram | Full Stack Developer</title>
+
+    <meta
+      name="description"
+      content="Learn more about Samir Meshram, a full stack developer focused on frontend, backend, Python, Java, and practical project development."
+    />
+
+    <meta
+      name="keywords"
+      content="About Samir Meshram, Samir Meshram, Full Stack Developer, Python Developer, Java Developer, Backend Developer, Web Developer"
+    />
+
+    <meta name="author" content="Samir Meshram" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b1020" />
+
+    <link rel="canonical" href="https://samirmeshram.in/about.html" />
+    <link rel="stylesheet" href="about.css" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://samirmeshram.in/about.html" />
+    <meta
+      property="og:title"
+      content="About Samir Meshram | Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Learn more about Samir Meshram, a full stack developer focused on frontend, backend, Python, Java, and practical project development."
+    />
+    <meta property="og:site_name" content="Samir Meshram" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="About Samir Meshram | Full Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Learn more about Samir Meshram, a full stack developer focused on frontend, backend, Python, Java, and practical project development."
+    />
+  </head>
+  <body class="page page--about">
+    <div class="page-loader" aria-hidden="true">
+      <div class="page-loader__logo">S<span>.</span></div>
+      <div class="page-loader__text">Loading the about page...</div>
+      <div class="page-loader__bar"><span></span></div>
+    </div>
+
+    <div class="page-progress" aria-hidden="true"></div>
+    <div class="cursor cursor-dot" aria-hidden="true"></div>
+    <div class="cursor cursor-ring" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <button class="back-to-top" aria-label="Back to top"><span>↑</span></button>
+    <canvas id="pageCanvas" aria-hidden="true"></canvas>
+
+    <header class="header">
+      <nav class="container nav">
+        <a
+          class="brand magnetic"
+          href="index.html"
+          aria-label="Go to home page"
+        >
+          <span class="brand__mark">Samir M</span>
+          <span class="brand__dot">.</span>
+        </a>
+
+        <div class="nav__links">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="is-current" aria-current="page">About</a>
+          <a href="journey.html">Journey</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav__actions">
+          <button
+            class="theme-toggle magnetic"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-toggle__sun">☀</span>
+            <span class="theme-toggle__moon">☾</span>
+          </button>
+          <a
+            class="button button--tiny button--ghost magnetic desktop-only"
+            href="contact.html"
+            >Let's Talk</a
+          >
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="is-current" aria-current="page">About</a>
+        <a href="journey.html">Journey</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero__glow"></div>
+        <div class="container page-hero__grid">
+          <div class="page-hero__content reveal">
+            <div class="eyebrow">About • Background • Growth</div>
+            <h1>
+              More than a developer — I build
+              <span class="gradient-text"
+                >practical digital products with balanced frontend and backend
+                thinking</span
+              >.
+            </h1>
+            <p class="page-hero__lead">
+              I am Samir Meshram, a Computer Science and Engineering graduate in
+              Data Science from RTMNU, Nagpur University. I focus on full stack
+              development, Java, Python, backend-oriented problem solving, and
+              building projects that are useful, clean, and reliable.
+            </p>
+            <div class="hero-actions">
+              <a class="button button--primary magnetic" href="journey.html"
+                >Continue to Journey</a
+              >
+              <a class="button button--ghost magnetic" href="index.html"
+                >Back to Home Overview</a
+              >
+            </div>
+            <div class="hero-metrics">
+              <article class="stat-card magnetic">
+                <strong><span data-counter="4">4</span>+</strong>
+                <span>Major personal and academic projects</span>
+              </article>
+              <article class="stat-card magnetic">
+                <strong>7.49 / 10</strong>
+                <span>Graduation CGPA with First Class</span>
+              </article>
+              <article class="stat-card magnetic">
+                <strong>Nagpur</strong>
+                <span>Based in Maharashtra, India</span>
+              </article>
+              <article class="stat-card magnetic">
+                <strong><span data-counter="3">3</span></strong>
+                <span>Core focus areas: Frontend, Backend, Data Science</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="page-hero__visual reveal">
+            <div class="orbit about-orbit">
+              <article class="orbit__chip glass magnetic">
+                <strong>Builder</strong>
+                <span>Turns ideas into working projects.</span>
+              </article>
+              <article class="orbit__chip glass magnetic">
+                <strong>Frontend + Backend</strong>
+                <span>Values both user experience and system logic.</span>
+              </article>
+              <article class="orbit__chip glass magnetic">
+                <strong>Java & Python</strong>
+                <span>Builds practical tools and backend solutions.</span>
+              </article>
+              <article class="orbit__chip glass magnetic">
+                <strong>Learner mindset</strong>
+                <span
+                  >Improves through projects, practice, and consistency.</span
+                >
+              </article>
+
+              <div class="orbit__center showcase-card">
+                <div class="orbit__label">Identity in motion</div>
+                <div class="orbit__title">Samir Meshram</div>
+                <p class="orbit__description">
+                  I enjoy building web applications and project-based solutions
+                  with a strong balance of frontend design, backend development,
+                  Java, Python, and data-driven problem solving.
+                </p>
+                <div class="inline-kpis">
+                  <span class="pill">Frontend + Backend</span>
+                  <span class="pill">Java + Python</span>
+                  <span class="pill">Project-driven growth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-heading__kicker">The Story</div>
+            <h2>
+              I entered development to build practical solutions, improve
+              continuously, and turn ideas into real working products.
+            </h2>
+            <p>
+              My journey comes from curiosity, consistent practice, and
+              project-based learning. I enjoy understanding how things work on
+              both the frontend and backend, and I like building applications
+              that solve real problems instead of remaining only as concepts.
+            </p>
+          </div>
+
+          <div class="grid--two about-split">
+            <div class="split-copy reveal">
+              <article class="panel magnetic">
+                <h3 class="panel__title">How I think</h3>
+                <p>
+                  I approach every project with balance. On the frontend side, I
+                  want the interface to feel clean, responsive, and easy to
+                  understand. On the backend side, I care about logic,
+                  structure, APIs, authentication, and data flow. I do not see
+                  these as separate worlds — good products need both.
+                </p>
+                <p>
+                  Because of that, I enjoy full stack development. I also work
+                  comfortably with Java and Python, especially for
+                  backend-oriented projects, document tools, and data-focused
+                  work. My goal is always to build something practical,
+                  maintainable, and useful.
+                </p>
+              </article>
+
+              <article class="panel magnetic">
+                <h3 class="panel__title">How I show up in projects</h3>
+                <ul class="list-check">
+                  <li>
+                    I turn ideas from college and personal work into complete
+                    project flows.
+                  </li>
+                  <li>
+                    I give equal importance to frontend usability and backend
+                    reliability.
+                  </li>
+                  <li>
+                    I enjoy solving real problems with Java, Python, web
+                    technologies, and databases.
+                  </li>
+                  <li>
+                    I learn by building, improving, and understanding how
+                    systems connect together.
+                  </li>
+                  <li>
+                    I focus on clean code, practical solutions, and steady
+                    long-term growth.
+                  </li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="card-grid reveal">
+              <article class="card magnetic">
+                <div class="card__eyebrow">Education</div>
+                <h3 class="card__title">
+                  B.E. in Computer Science and Engineering (Data Science)
+                </h3>
+                <p>
+                  I completed my graduation from RTMNU, Nagpur University with a
+                  CGPA of 7.49 / 10 and First Class.
+                </p>
+                <div class="card__meta">
+                  <span class="pill">RTMNU Nagpur</span>
+                  <span class="pill">Data Science</span>
+                  <span class="pill">First Class</span>
+                </div>
+              </article>
+
+              <article class="card magnetic">
+                <div class="card__eyebrow">Academic foundation</div>
+                <h3 class="card__title">
+                  Science background before engineering
+                </h3>
+                <p>
+                  I completed my 11th and 12th standard at Mount Jr. College of
+                  Science, Saoli, District Chandrapur.
+                </p>
+                <div class="card__meta">
+                  <span class="pill">Science Stream</span>
+                  <span class="pill">Saoli</span>
+                  <span class="pill">Chandrapur</span>
+                </div>
+              </article>
+
+              <article class="card magnetic">
+                <div class="card__eyebrow">Personal side</div>
+                <h3 class="card__title">
+                  I value consistency, learning, walking, and running
+                </h3>
+                <p>
+                  Outside project work, I enjoy walking and running. They help
+                  me stay focused, disciplined, and mentally fresh.
+                </p>
+                <div class="card__meta">
+                  <span class="pill">Consistency</span>
+                  <span class="pill">Growth mindset</span>
+                  <span class="pill">Healthy routine</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-heading__kicker">Craft Principles</div>
+            <h2>
+              What guides the way I build frontend, backend, and project-based
+              solutions.
+            </h2>
+            <p>
+              I believe good development is not only about making something
+              work. It is about making it readable, structured, efficient, and
+              useful for the person using it.
+            </p>
+          </div>
+
+          <div class="card-grid card-grid--3 principles-grid">
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">01</div>
+              <h3 class="card__title">
+                Frontend should feel clear and responsive
+              </h3>
+              <p>
+                A clean interface helps users understand the product faster and
+                trust it more.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">02</div>
+              <h3 class="card__title">
+                Backend should stay reliable and organized
+              </h3>
+              <p>
+                Strong logic, APIs, authentication, and data handling make
+                applications easier to scale and maintain.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">03</div>
+              <h3 class="card__title">
+                Practical projects are the best learning path
+              </h3>
+              <p>
+                Building real applications teaches more than theory because it
+                reveals how systems connect in practice.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">04</div>
+              <h3 class="card__title">Clean code supports long-term growth</h3>
+              <p>
+                Readable structure and sensible naming make future updates
+                easier for both the developer and the team.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">05</div>
+              <h3 class="card__title">Learning should stay continuous</h3>
+              <p>
+                Each project is a chance to strengthen problem solving, improve
+                decisions, and expand technical depth.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">06</div>
+              <h3 class="card__title">
+                Balanced development creates better products
+              </h3>
+              <p>
+                Strong products need both good frontend experience and strong
+                backend foundations.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-heading__kicker">Identity Lab</div>
+            <h2>See the same developer through four different lenses.</h2>
+            <p>
+              Different projects bring out different strengths. Some need a
+              strong frontend builder, some need backend logic, some need
+              problem solving through Python or Java, and some need a full stack
+              mindset that connects everything.
+            </p>
+          </div>
+
+          <div class="identity-lab reveal">
+            <div class="identity-lab__controls">
+              <button
+                class="lens-button is-active magnetic"
+                data-lens="builder"
+                type="button"
+              >
+                Builder
+              </button>
+              <button
+                class="lens-button magnetic"
+                data-lens="designer"
+                type="button"
+              >
+                Frontend
+              </button>
+              <button
+                class="lens-button magnetic"
+                data-lens="architect"
+                type="button"
+              >
+                Backend
+              </button>
+              <button
+                class="lens-button magnetic"
+                data-lens="partner"
+                type="button"
+              >
+                Learner
+              </button>
+            </div>
+
+            <article
+              class="showcase-card identity-lab__output magnetic"
+              id="lensOutput"
+            >
+              <div class="card__eyebrow">Builder</div>
+              <h3 class="card__title">
+                I turn project ideas into working applications with practical
+                implementation.
+              </h3>
+              <p>
+                I like moving from idea to execution through clear steps.
+                Whether it is a web application, PDF tool, subtitle generator,
+                or backend project, I focus on making the final result actually
+                work.
+              </p>
+              <div class="card__meta">
+                <span class="pill">Execution</span>
+                <span class="pill">Problem solving</span>
+                <span class="pill">Project focus</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-heading__kicker">Workbench</div>
+            <h2>
+              My workflow combines understanding the idea, building carefully,
+              and improving through practice.
+            </h2>
+            <p>
+              The exact project may change, but my approach usually stays the
+              same: understand the problem, design the solution, build the
+              frontend and backend properly, test it, and keep refining it.
+            </p>
+          </div>
+
+          <div class="card-grid card-grid--3 workbench-grid">
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">Phase 01</div>
+              <h3 class="card__title">Understand the problem</h3>
+              <p>
+                I start by understanding the goal, user need, technical
+                requirement, and what the project must actually solve.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">Phase 02</div>
+              <h3 class="card__title">Plan the interface and logic</h3>
+              <p>
+                I think about the frontend flow, backend structure, and how data
+                should move through the application.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">Phase 03</div>
+              <h3 class="card__title">Build and connect</h3>
+              <p>
+                I implement the frontend, backend, APIs, database logic, and
+                project features in a structured way.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">Phase 04</div>
+              <h3 class="card__title">Test and improve</h3>
+              <p>
+                I review responsiveness, feature behavior, data handling, and
+                usability to make the project more reliable.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">Phase 05</div>
+              <h3 class="card__title">Keep it maintainable</h3>
+              <p>
+                I try to keep the code readable, organized, and easier to
+                understand for future improvements.
+              </p>
+            </article>
+            <article class="card magnetic reveal">
+              <div class="card__eyebrow">Phase 06</div>
+              <h3 class="card__title">Learn from every build</h3>
+              <p>
+                Each project helps me improve my frontend, backend, Java,
+                Python, and problem-solving skills further.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-heading__kicker">Collaboration Promise</div>
+            <h2>
+              I value clarity, steady growth, and responsible project execution.
+            </h2>
+            <p>
+              I may not come from company job experience yet, but I take project
+              work seriously. I value honest effort, continuous learning, and
+              building things in a way that shows discipline and intent.
+            </p>
+          </div>
+
+          <div class="card-grid card-grid--2 promise-grid">
+            <article class="panel magnetic reveal">
+              <h3 class="panel__title">Clear thinking</h3>
+              <p>
+                I like understanding a problem properly before rushing into a
+                solution.
+              </p>
+            </article>
+            <article class="panel magnetic reveal">
+              <h3 class="panel__title">Balanced development</h3>
+              <p>
+                I give equal attention to frontend experience and backend
+                structure while building projects.
+              </p>
+            </article>
+            <article class="panel magnetic reveal">
+              <h3 class="panel__title">Consistent learning</h3>
+              <p>
+                I keep improving through projects, practice, and deeper
+                understanding of tools and technologies.
+              </p>
+            </article>
+            <article class="panel magnetic reveal">
+              <h3 class="panel__title">Practical execution</h3>
+              <p>
+                I prefer useful, working solutions over unnecessary complexity
+                or flashy but weak implementations.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <div class="showcase-card about-cta reveal">
+            <div class="card__eyebrow">Beyond this page</div>
+            <h2 class="card__title">
+              If you want to know more, the next pages show my journey, skills,
+              and project work in more detail.
+            </h2>
+            <p>
+              Continue through the journey, skills, and projects pages to
+              explore my academic background, technical strengths, and the
+              projects that shaped my development path.
+            </p>
+            <div class="hero-actions">
+              <a class="button button--primary magnetic" href="journey.html"
+                >Explore the Journey</a
+              >
+              <a class="button button--ghost magnetic" href="skills.html"
+                >View the Skills Depth</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a class="brand" href="index.html">
+            <span class="brand__mark">Samir M</span>
+            <span class="brand__dot">.</span>
+          </a>
+          <p class="copy-note">
+            About page for Samir Meshram — a full stack developer focused on
+            frontend, backend, Java, Python, data science, and practical project
+            building.
+          </p>
+          <div class="footer__meta">
+            <span>Based in Nagpur, India</span>
+            <span>Frontend + Backend + Data Science</span>
+            <span>Java • Python • JavaScript</span>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="is-current">About</a>
+          <a href="journey.html">Journey</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="about.js"></script>
+  </body>
+</html>

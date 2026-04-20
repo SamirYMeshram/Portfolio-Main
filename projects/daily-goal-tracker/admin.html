@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Goal Tracker - Admin</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>html{visibility:hidden}</style>
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+  <script src="auth-guard.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div class="logo-box">
+          <p class="eyebrow">Task Manager</p>
+          <h2>Daily Goal Tracker</h2>
+        </div>
+        <nav class="side-nav">
+          <a href="dashboard.html">Today Checklist</a>
+          <a href="report.html">Reports & Charts</a>
+          <a class="active" href="admin.html">Admin Panel</a>
+        </nav>
+      </div>
+      <div class="sidebar-footer">
+        <button id="logoutBtn" class="btn btn-outline btn-block">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="page-head card">
+        <div>
+          <p class="eyebrow">Admin Panel</p>
+          <h1>Manage Master Tasks</h1>
+          <p class="muted">Add, edit, disable, delete, export, restore, and review your fixed daily task list.</p>
+        </div>
+        <div class="row-actions">
+          <button id="exportTasksBtn" class="btn btn-outline" type="button">Export Tasks JSON</button>
+          <button id="restorePdfTasksBtn" class="btn btn-warning" type="button">Restore PDF Tasks</button>
+          <button id="clearHistoryBtn" class="btn btn-danger" type="button">Clear History Only</button>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card card"><span>Total Tasks</span><strong id="adminTotalTasks">0</strong></article>
+        <article class="stat-card card"><span>Active Tasks</span><strong id="adminActiveTasks">0</strong></article>
+        <article class="stat-card card"><span>Inactive Tasks</span><strong id="adminInactiveTasks">0</strong></article>
+        <article class="stat-card card"><span>Categories</span><strong id="adminCategoryCount">0</strong></article>
+        <article class="stat-card card"><span>Platforms</span><strong id="adminPlatformCount">0</strong></article>
+      </section>
+
+      <section class="admin-grid">
+        <div>
+          <section class="card bottom-gap">
+            <div class="section-head"><h3>Add / Edit Task</h3></div>
+            <form id="taskForm" class="stack-form">
+              <input type="hidden" id="editTaskId" />
+              <div class="split-grid">
+                <label><span>Task Title</span><input type="text" id="taskTitle" required /></label>
+                <label><span>Category</span><input type="text" id="taskCategory" required /></label>
+              </div>
+              <div class="split-grid">
+                <label><span>Platform</span><input type="text" id="taskPlatform" required /></label>
+                <label><span>Section</span><input type="text" id="taskSection" /></label>
+              </div>
+              <div class="split-grid">
+                <label><span>Target</span><input type="text" id="taskTarget" required /></label>
+                <label><span>Estimated Time</span><input type="text" id="taskTime" placeholder="25 min" /></label>
+              </div>
+              <div class="split-grid">
+                <label>
+                  <span>Priority</span>
+                  <select id="taskPriority">
+                    <option value="High">High</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="Low">Low</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Status</span>
+                  <select id="taskActive">
+                    <option value="true">Active</option>
+                    <option value="false">Inactive</option>
+                  </select>
+                </label>
+              </div>
+              <label><span>Notes</span><textarea id="taskNotes" rows="3"></textarea></label>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save Task</button>
+                <button type="button" id="resetTaskFormBtn" class="btn btn-outline">Reset Form</button>
+              </div>
+              <p id="taskFormMessage" class="form-message"></p>
+            </form>
+          </section>
+
+          <section class="card">
+            <div class="section-head"><h3>All Tasks</h3></div>
+            <div class="toolbar-grid">
+              <input type="text" id="taskSearchInput" placeholder="Search title, category, platform, section" />
+              <select id="adminCategoryFilter"><option value="all">All Categories</option></select>
+              <select id="adminPlatformFilter"><option value="all">All Platforms</option></select>
+              <select id="adminActiveFilter">
+                <option value="all">All Status</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+              </select>
+            </div>
+            <div class="table-wrap top-gap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Platform</th>
+                    <th>Section</th>
+                    <th>Target</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="taskTableBody"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <div>
+          <section class="card bottom-gap">
+            <div class="section-head"><h3>Categories</h3></div>
+            <div id="categoryCountList" class="list-stack"></div>
+          </section>
+
+          <section class="card bottom-gap">
+            <div class="section-head"><h3>Platforms</h3></div>
+            <div id="platformCountList" class="list-stack"></div>
+          </section>
+
+          <section class="card">
+            <div class="section-head"><h3>Recent Admin Activity</h3></div>
+            <div id="adminActivityList" class="list-stack"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="storage.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
