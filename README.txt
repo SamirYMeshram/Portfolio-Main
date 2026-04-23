@@ -1,5 +1,3 @@
-<div align="center">
-
 # Samir Meshram — Portfolio Website
 
 ### A premium multi-page developer portfolio crafted to present technical depth, practical project work, and a polished personal brand.
