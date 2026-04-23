@@ -15,7 +15,7 @@
   <a href="https://samirmeshram.in/projects"><img src="https://img.shields.io/badge/Explore-Projects-1d4ed8?style=flat-square" alt="Explore Projects" /></a>
   <a href="https://samirmeshram.in/about"><img src="https://img.shields.io/badge/View-About-0ea5e9?style=flat-square" alt="View About" /></a>
   <a href="https://samirmeshram.in/services"><img src="https://img.shields.io/badge/See-Services-7c3aed?style=flat-square" alt="See Services" /></a>
-  <a href="https://samirmeshram.in/contact"><img src="https://img.shields.io/badge/Let%27s%20Talk-Contact-ec4899?style=flat-square" alt="Contact" /></a>
+  <a href="https://samirmeshram.in/contact"><img src="https://img.shields.io/badge/Let's%20Talk-Contact-ec4899?style=flat-square" alt="Contact" /></a>
 </p>
 
 <p>
@@ -172,7 +172,7 @@ The source behind the portfolio — structured as a static multi-page front-end 
 
 ## ✦ Visual Showcase
 
-> Add your final screenshots inside a `screenshots/` folder at the root of the repository using the filenames below.
+> Updated with corrected image mapping, clearer alt text, and cleaned HTML so every screenshot is properly tied to its page.
 
 <table>
 <tr>
@@ -180,20 +180,24 @@ The source behind the portfolio — structured as a static multi-page front-end 
 
 ### Home
 <a href="https://samirmeshram.in/">
-  <img src="./screenshots/home.png" alt="Home page screenshot of Samir Meshram portfolio website" width="100%" />
+  <img width="100%" alt="Home page preview — Samir Meshram portfolio website" src="https://github.com/user-attachments/assets/9c87d80c-61cf-4ea9-ab93-e17cd45b5395" />
 </a>
-
-**Live Page:** [samirmeshram.in](https://samirmeshram.in/)
+<br />
+<sub><strong>Screenshot:</strong> Home page hero and first-impression layout</sub>
+<br /><br />
+<strong>Live Page:</strong> <a href="https://samirmeshram.in/">samirmeshram.in</a>
 
 </td>
 <td width="50%" align="center" valign="top">
 
 ### About
 <a href="https://samirmeshram.in/about">
-  <img src="./screenshots/about.png" alt="About page screenshot of Samir Meshram portfolio website" width="100%" />
+  <img width="100%" alt="About page preview — Samir Meshram portfolio website" src="https://github.com/user-attachments/assets/137f9d64-2812-4baf-8ddc-a5a4d738e77f" />
 </a>
-
-**Live Page:** [samirmeshram.in/about](https://samirmeshram.in/about)
+<br />
+<sub><strong>Screenshot:</strong> About page with background and developer narrative</sub>
+<br /><br />
+<strong>Live Page:</strong> <a href="https://samirmeshram.in/about">samirmeshram.in/about</a>
 
 </td>
 </tr>
@@ -202,20 +206,24 @@ The source behind the portfolio — structured as a static multi-page front-end 
 
 ### Journey
 <a href="https://samirmeshram.in/journey">
-  <img src="./screenshots/journey.png" alt="Journey page screenshot of Samir Meshram portfolio website" width="100%" />
+  <img width="100%" alt="Journey page preview — Samir Meshram portfolio website" src="https://github.com/user-attachments/assets/b5e70a68-b5ea-428a-aa76-c17f63495650" />
 </a>
-
-**Live Page:** [samirmeshram.in/journey](https://samirmeshram.in/journey)
+<br />
+<sub><strong>Screenshot:</strong> Journey page showing growth, timeline, and progression</sub>
+<br /><br />
+<strong>Live Page:</strong> <a href="https://samirmeshram.in/journey">samirmeshram.in/journey</a>
 
 </td>
 <td width="50%" align="center" valign="top">
 
 ### Skills
 <a href="https://samirmeshram.in/skills">
-  <img src="./screenshots/skills.png" alt="Skills page screenshot of Samir Meshram portfolio website" width="100%" />
+  <img width="100%" alt="Skills page preview — Samir Meshram portfolio website" src="https://github.com/user-attachments/assets/18079792-6fa3-4ad5-b2c5-5d57e8aa0b9b" />
 </a>
-
-**Live Page:** [samirmeshram.in/skills](https://samirmeshram.in/skills)
+<br />
+<sub><strong>Screenshot:</strong> Skills page with technical strengths and stack presentation</sub>
+<br /><br />
+<strong>Live Page:</strong> <a href="https://samirmeshram.in/skills">samirmeshram.in/skills</a>
 
 </td>
 </tr>
@@ -224,20 +232,24 @@ The source behind the portfolio — structured as a static multi-page front-end 
 
 ### Projects
 <a href="https://samirmeshram.in/projects">
-  <img src="./screenshots/projects.png" alt="Projects page screenshot of Samir Meshram portfolio website" width="100%" />
+  <img width="100%" alt="Projects page preview — Samir Meshram portfolio website" src="https://github.com/user-attachments/assets/dbc90398-c272-4fb0-87c5-1bd4ed1a82db" />
 </a>
-
-**Live Page:** [samirmeshram.in/projects](https://samirmeshram.in/projects)
+<br />
+<sub><strong>Screenshot:</strong> Projects page with featured builds and portfolio proof</sub>
+<br /><br />
+<strong>Live Page:</strong> <a href="https://samirmeshram.in/projects">samirmeshram.in/projects</a>
 
 </td>
 <td width="50%" align="center" valign="top">
 
 ### Services
 <a href="https://samirmeshram.in/services">
-  <img src="./screenshots/services.png" alt="Services page screenshot of Samir Meshram portfolio website" width="100%" />
+  <img width="100%" alt="Services page preview — Samir Meshram portfolio website" src="https://github.com/user-attachments/assets/5f76da24-0bdc-4636-a611-d1bc51a31be9" />
 </a>
-
-**Live Page:** [samirmeshram.in/services](https://samirmeshram.in/services)
+<br />
+<sub><strong>Screenshot:</strong> Services page showing offerings and collaboration fit</sub>
+<br /><br />
+<strong>Live Page:</strong> <a href="https://samirmeshram.in/services">samirmeshram.in/services</a>
 
 </td>
 </tr>
@@ -246,10 +258,12 @@ The source behind the portfolio — structured as a static multi-page front-end 
 
 ### Contact
 <a href="https://samirmeshram.in/contact">
-  <img src="./screenshots/contact.png" alt="Contact page screenshot of Samir Meshram portfolio website" width="100%" />
+  <img width="100%" alt="Contact page preview — Samir Meshram portfolio website" src="https://github.com/user-attachments/assets/435ec335-66a6-48fa-bfd9-f1047546340c" />
 </a>
-
-**Live Page:** [samirmeshram.in/contact](https://samirmeshram.in/contact)
+<br />
+<sub><strong>Screenshot:</strong> Contact page for roles, projects, and collaboration</sub>
+<br /><br />
+<strong>Live Page:</strong> <a href="https://samirmeshram.in/contact">samirmeshram.in/contact</a>
 
 </td>
 </tr>
